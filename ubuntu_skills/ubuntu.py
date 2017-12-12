@@ -8,7 +8,7 @@ sudo apt-get --purge remove xrdp
 2)
 ubuntu好看主題安裝及使用：
 安裝：
-sudo apt-get unity-tweak-tool
+sudo apt-get install unity-tweak-tool
 打開：
 unity-tweak-tool
 
