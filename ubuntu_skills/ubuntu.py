@@ -27,7 +27,18 @@ ubuntu backup
 system setting:
 backup
 
-5)
+5)windows重装系统时，格式化硬盘，并进行格式转换
+DISKPART> list disk
+DISKPART> select disk 0
+DISKPART> clean
+DISKPART> convert gpt
+DiskPart 已将所选磁盘成功地更换为 GPT 格式
+
+6）
+
+
+
+
 
 
 
