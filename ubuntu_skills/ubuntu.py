@@ -28,6 +28,9 @@ system setting:
 backup
 
 5)windows重装系统时，格式化硬盘，并进行格式转换
+问题描述：
+windows 无法安装到这个磁盘。 选中的磁盘具有MBR分区表。 在EFI系统上，Windows只能安装到GPT 磁盘
+
 DISKPART> list disk
 DISKPART> select disk 0
 DISKPART> clean
