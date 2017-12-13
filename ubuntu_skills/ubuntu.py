@@ -41,13 +41,27 @@ DISKPART> convert gpt     #输入 convert gpt 命令后回车，即可把当前�
 DiskPart 已将所选磁盘成功地更换为 GPT 格式
 运行 list partition 命令查看已经创建的分区信息
 
-6）
+6）Ubuntu死机解决方法汇总
+http://www.jianshu.com/p/36fb9eed82a3
 
+  可尝试的解决方法
+  1. 进入TTY终端
+  Ctrl+Alt+F1进入TTY1终端字符界面, 输入用户名和密码以登录
+  输入top命令, 找到可能造成假死的进程, 用kill命令结束掉进程。然后Ctrl+Alt+F7回到桌面
 
+  2. 直接注销用户
+  Ctrl+Alt+F1进入TTY1终端字符界面, 输入用户名和密码以登录。
+  然后执行以下的任意一个命令注销桌面重新登录。
+  sudo pkill Xorg
+  或者
+  sudo restart lightdm
 
-
-
-
+  3. 底层方法
+  如果上面两种方法不成功, 那有可能是比较底层的软件出现问题。
+  可以试试 :** reisub 方法**。
+  说具体一点, 是一种系统请求, 直接交给内核处理。
+  键盘上一般都有一个键SysRq, 和PrintScreen(截屏)在一个键位上，这就是系统请求的键。
+  这个方法可以在死机的情况下安全地重启计算机, 数据不会丢失。
 
 
 
