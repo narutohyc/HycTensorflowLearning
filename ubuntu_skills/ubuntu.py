@@ -1,27 +1,23 @@
-1)
-查看本機安裝軟件（管道過濾）： 
+1)查看本機安裝軟件（管道過濾）： 
 ubuntu@ubuntu:~$ dpkg --list | grep xrd
-ii  xrdp                                       0.6.1-2                                      amd64        Remote Desktop Protocol (RDP) server
+ii  xrdp             0.6.1-2           amd64        Remote Desktop Protocol (RDP) server
 卸載安裝軟件：
 sudo apt-get --purge remove xrdp
 
-2)
-ubuntu好看主題安裝及使用：
+2)ubuntu好看主題安裝及使用：
 安裝：
 sudo apt-get install unity-tweak-tool
 打開：
 unity-tweak-tool
 
-3)
-ubuntu下配置路徑文件：
+3)ubuntu下配置路徑文件：
 ~/.bashrc
 source ~/.bashrc  #生效
 或
 /etc/profile
 source /etc/profile  #生效
 
-4）
-ubuntu backup
+4）ubuntu backup
 /home/hyc/.cache/dconf
 /home/hyc/.dbus
 system setting:
@@ -41,9 +37,10 @@ DISKPART> convert gpt     #输入 convert gpt 命令后回车，即可把当前�
 DiskPart 已将所选磁盘成功地更换为 GPT 格式
 运行 list partition 命令查看已经创建的分区信息
 
+-----------------------------------------------------------我是分割线-------------------------------------------------------------------
+
 6）Ubuntu死机解决方法汇总
 http://www.jianshu.com/p/36fb9eed82a3
-
   可尝试的解决方法
   1. 进入TTY终端
   Ctrl+Alt+F1进入TTY1终端字符界面, 输入用户名和密码以登录
@@ -62,6 +59,20 @@ http://www.jianshu.com/p/36fb9eed82a3
   说具体一点, 是一种系统请求, 直接交给内核处理。
   键盘上一般都有一个键SysRq, 和PrintScreen(截屏)在一个键位上，这就是系统请求的键。
   这个方法可以在死机的情况下安全地重启计算机, 数据不会丢失。
+  
+  7）
+  
+  
+  8）
+  
+  
+  9）
+  
+  
+  
+  
+  
+  
 
 
 
