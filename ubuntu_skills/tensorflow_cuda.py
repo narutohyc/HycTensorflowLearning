@@ -19,8 +19,8 @@ sys.path.extend('/usr/local/cuda/lib64')
 
 
 
-6）
-
+6）python install opencv
+pip install opencv-python
 
 
 7）
