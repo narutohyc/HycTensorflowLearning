@@ -1,4 +1,4 @@
-1)查看本機安裝軟件（管道過濾）： 
+<b>1)查看本機安裝軟件（管道過濾）： </b>
 ubuntu@ubuntu:~$ dpkg --list | grep xrd
 ii  xrdp             0.6.1-2           amd64        Remote Desktop Protocol (RDP) server
 卸載安裝軟件：
