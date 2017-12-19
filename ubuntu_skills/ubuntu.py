@@ -60,13 +60,48 @@ http://www.jianshu.com/p/36fb9eed82a3
   键盘上一般都有一个键SysRq, 和PrintScreen(截屏)在一个键位上，这就是系统请求的键。
   这个方法可以在死机的情况下安全地重启计算机, 数据不会丢失。
   
-  7）
+  
+7）Ubuntu中设置静态IP的方法介绍
+  1、修改网络配置文件 
+  网络配置信息存储在/etc/network/interfaces 文件中 
+  sudo vi /etc/network/interfaces 
+  我用vi打开，我的文件显示如下内容： 
+  # This file describes the network interfaces available on your system 
+  # and how to activate them. For more information, see interfaces(5). 
+  # The loopback network interface 
+  auto lo 
+  iface lo inet loopback 
+  我的网络配置文件中只有一个环回地址，即127.0.0.1。在下面添加： 
+  auto eth0 #指明网卡eth0在系统启动时自动加载 
+  iface eth0 inet static #指明eth0采用ipv4地址，inet表示ipv4地址，inet6表示ipv6地址; static表示静态，dhcp表示动态 
+  address 172.22.112.13 #静态ip 
+  netmask 255.255.255.128 #子网掩码 
+  gateway 172.22.112.1 #网关地址 
   
   
-  8）
+  例子：
+  # interfaces(5) file used by ifup(8) and ifdown(8)
+  auto lo
+  iface lo inet loopback
+
+  auto enp0s31f6
+  iface enp0s31f6 inet static
+  address 140.138.152.236
+  netmask 255.255.255.0
+  gateway 140.138.152.254
+
+  dns-nameservers 8.8.8.8
+  
+  2、重新啓動
+  sudo /etc/init.d/networking restart
+  reboot
   
   
-  9）
+8）ubuntu16.04修改用戶密碼
+  passwd username
+  
+  
+9）
   
   
   
