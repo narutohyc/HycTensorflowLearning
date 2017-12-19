@@ -101,7 +101,9 @@ http://www.jianshu.com/p/36fb9eed82a3
   passwd username
   
   
-9）
+9）硬盘复制
+  硬盘数据克隆——“再生龙”
+  http://www.jianshu.com/p/2db596571db3
   
   
   
