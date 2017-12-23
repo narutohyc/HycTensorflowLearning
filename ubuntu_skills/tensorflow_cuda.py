@@ -23,8 +23,22 @@ sys.path.extend('/usr/local/cuda/lib64')
 pip install opencv-python
 
 
-7）
+7）tensorflow讀取大數據
+  https://zhuanlan.zhihu.com/p/27238630
+  http://blog.csdn.net/qiaohan12345/article/details/52343568
+  https://wxinlong.github.io/2017/05/13/tfrecords/
+  https://www.zixundingzhi.com/bianchengyuyan/9dd30be9a727b673.html
+    
+8）
 
+
+
+
+9）
+
+
+
+10）
 
 
 
