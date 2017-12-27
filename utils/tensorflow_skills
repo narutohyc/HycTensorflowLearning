@@ -1,9 +1,9 @@
-1)tflearn自定義loss function
+1）tflearn自定義loss function
 Hi, you can add any new loss function to tflearn/objectives.py file 
 (https://github.com/tflearn/tflearn/blob/master/tflearn/objectives.py). 
 To use it, you just need to call its name in regression layer.
 
-2)TensorFlow代码模板
+2）TensorFlow代码模板
     import tensorflow as tf
     # 这里写模型的主要算法
     def inference(X):
@@ -52,7 +52,7 @@ To use it, you just need to call its name in regression layer.
         coord.join(threads)
         sess.close()
 
-3)Tensor進行切片、concat和reshape
+3）Tensor進行切片、concat和reshape
     1.切片(與數組操作無異)
       network[:, i, :, :, :]
     2.concat
@@ -60,7 +60,7 @@ To use it, you just need to call its name in regression layer.
     3.reshape
       tf.reshape(network, (m,n,q))
 
-4)(int\float->Tensor) TensorFlow 张量类型转换
+4）(int\float->Tensor) TensorFlow 张量类型转换
     from:https://www.w3cschool.cn/tensorflow_python/tensorflow_python-2t7u2cmq.html
     tf.bitcast
     bitcast(input，type，name=None)
@@ -77,7 +77,21 @@ To use it, you just need to call its name in regression layer.
     返回：
         返回 type 型张量。
     
-5)
+5）
+
+6）
+
+
+7）
+
+
+
+8）
+
+
+
+
+9）
 
 
 
