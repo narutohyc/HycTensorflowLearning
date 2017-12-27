@@ -61,6 +61,7 @@ To use it, you just need to call its name in regression layer.
       tf.reshape(network, (m,n,q))
 
 4)(int\float->Tensor) TensorFlow 张量类型转换
+    from:https://www.w3cschool.cn/tensorflow_python/tensorflow_python-2t7u2cmq.html
     tf.bitcast
     bitcast(input，type，name=None)
     参见指南：张量变换
