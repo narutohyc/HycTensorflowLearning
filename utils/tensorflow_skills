@@ -3,5 +3,77 @@ Hi, you can add any new loss function to tflearn/objectives.py file
 (https://github.com/tflearn/tflearn/blob/master/tflearn/objectives.py). 
 To use it, you just need to call its name in regression layer.
 
-2. 
+2. TensorFlow代码模板
+import tensorflow as tf
+
+# 这里写模型的主要算法
+
+def inference(X):
+    # 计算输入 X 时，模型的输出
+def loss(X, Y):
+    # 根据输入 X 和期望 Y 算出损失
+def input(total_loss):
+    # 读取训练数据
+def train(total_loss):
+    # 根据计算的总损失调整模型参数
+def evaluate(sess, X, Y):
+    # 对模型进行评估
+
+# Saver 对象用于保存检查点
+saver = tf.train.Saver()
+
+with tf.Session() as sess:
+    tf.initialize_all_variables().run()
+    
+    X, Y = inputs()
+    
+    # 好像少了个 inference，感觉应该是 total_loss = loss(inference(X), Y) 才对，算出来损失
+    total_loss = loss(X, Y)
+    # 根据损失调教模型
+    train_op = train(total_loss)
+    
+    # TODO: 这个应该是多线程的代码？
+    coord = tf.train.Coordinator()
+    threads = tf.train.start_queue_runners(sess=sess, coord=coord)
+    
+    # 训练次数
+    training_steps = 1000
+    
+    # 使用 Saver 获取检查点
+    initial_step = 0
+    ckpt = tf.train.get_checkpoint_state(os.path.dirname(__file__))
+    if chkpt and ckpt.model_checkpoint_path:
+        saver.restore(sess, ckpt.model_checkpoint_path)
+        initial_step = int(ckpt.model_checkpoint_path.rsplit('-', 1)[1])
+    
+    # 打印出每次训练的结果
+    for step in range(initial_step, training_steps):
+        sess.run([train_op])
+        if step % 10 == 0:
+            print "loss:", sess.run([total_loss])
+    
+    # 模型评估
+    evaluate(sess, X, Y)
+    
+    # 每 1000 次训练保存检查点一次
+    saver.save(sess, 'my-model', global_step=training_steps)
+    saver.close()
+    
+    coord.request_stop()
+    coord.join(threads)
+    sess.close()
+
+3. Tensor進行切片、concat和reshape
+
+4. (int\float->Tensor)類型轉換
+   
+
+
+
+
+
+
+
+
+
 
