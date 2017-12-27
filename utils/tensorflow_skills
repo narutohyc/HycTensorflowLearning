@@ -76,6 +76,18 @@ To use it, you just need to call its name in regression layer.
         name：操作的名称（可选）。
     返回：
         返回 type 型张量。
+        
+    
+    tf.cast(x, dtype, name=None)
+    此函数是类型转换函数
+    参数
+        x：输入
+        dtype：转换目标类型
+        name：名称
+    返回：Tensor
+    例：
+    # tensor `a` is [1.8, 2.2], dtype=tf.float  
+        tf.cast(a, tf.int32) ==> [1, 2]  # dtype=tf.int32  
     
 5）
 
