@@ -1,0 +1,4 @@
+Hi, you can add any new loss function to tflearn/objectives.py file 
+(https://github.com/tflearn/tflearn/blob/master/tflearn/objectives.py). 
+To use it, you just need to call its name in regression layer.
+
