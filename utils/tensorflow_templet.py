@@ -1,4 +1,13 @@
 # -*- coding: utf-8 -*-
+'''
+1.運行writeTfrecord2()，生成tensorflow的TFRecord格式的數據
+
+2.運行train()，訓練模型
+   
+3.運行test()，測試訓練好的模型
+
+'''
+
 
 from __future__ import division, print_function, absolute_import
 from tflearn.layers.core import input_data, dropout, fully_connected
