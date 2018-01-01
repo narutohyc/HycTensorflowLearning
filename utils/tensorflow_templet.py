@@ -99,6 +99,9 @@ def read_and_decode(filenames=None, batch_size=2):
     # 此處必須填寫常量數值
     image = tf.reshape(image, (width_m, height_m, depth_m))
     label = tf.reshape(label, (width_m, height_m))
+    ##########################################################
+    # you can put data augmentation here, I didn't use it
+    ##########################################################
 
     # 打散資料順序
     images, labels = tf.train.shuffle_batch(
