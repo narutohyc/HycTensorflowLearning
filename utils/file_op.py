@@ -16,7 +16,9 @@
   csvList = os.listdir(filepath)
   
   
-4.
+4. python删除文件与文件夹
+  os.remove(path)  #删除文件 path. 如果path是一个目录， 抛出 OSError错误。
+  os.rmdir(path)   #如果要删除目录，请使用rmdir().
   
   
   
