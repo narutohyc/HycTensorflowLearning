@@ -16,14 +16,16 @@
   csvList = os.listdir(filepath)
   
   
-4. python删除文件与文件夹
+4. python创建、删除文件与文件夹
+  os.mkdir(savepath)   #创建文件夹
   os.remove(path)  #删除文件 path. 如果path是一个目录， 抛出 OSError错误。
   os.rmdir(path)   #如果要删除目录，请使用rmdir().
   
   
-5. 
-
-
+5. 拼接路径
+  os.path.join(’savepath‘, ‘png/demo’)   #正确
+  os.path.join(’savepath‘, ‘/png/demo’)  #错误
+  
 
 6. 
   
