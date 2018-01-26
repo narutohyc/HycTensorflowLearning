@@ -58,12 +58,7 @@
 
   # 简便方法:  
   slim.stack(x, slim.conv2d, [(32, [3, 3]), (32, [1, 1]), (64, [3, 3]), (64, [1, 1])], scope='core')
-  
-  
-  
-  
-  
-  
+    
   
 2.Tensorflow一些常用基本概念与函数（1）
   http://blog.csdn.net/lenbow/article/details/52152766
