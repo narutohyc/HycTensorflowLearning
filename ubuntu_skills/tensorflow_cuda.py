@@ -17,6 +17,7 @@
 5）pycharm添加环境变量
   pycharm add system Environment Variables:
   Preferences > Console > Python Console > Environment Variables, setting
+  or  Settings > BUild,Execution,Deployment > Console > Python Console
   sys.path.extend('/usr/local/cuda/lib64')
 
 
