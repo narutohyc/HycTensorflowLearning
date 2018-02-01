@@ -29,12 +29,17 @@ pip install opencv-python
   https://wxinlong.github.io/2017/05/13/tfrecords/
   https://www.zixundingzhi.com/bianchengyuyan/9dd30be9a727b673.html
     
-8）
+8）如何查看ubuntu下显卡驱动是否已经成功安装
+  首先得安装mesa-utils，在终端输入命令：sudo apt-get install mesa-utils
+  然后再运行命令：glxinfo | grep rendering
+  如果结果是“yes”，证明显卡 驱动已经成功安装。
 
 
-
-
-9）
+9）手动挂载U盘
+  sudo fdisk -l查看插入的U盘位置，比如 /dev/sdb4
+  执行挂载
+  sudo mount /dev/sdb4 /media
+  cd /media   就可以查看
 
 
 
