@@ -46,7 +46,9 @@
 
 
 
-10）
+10）libcudart.so.8.0 cannot open shared object file: No such file or directory
+  解决办法是将一些文件复制到/usr/local/lib文件夹下
+  并更改权限
 
 
 
