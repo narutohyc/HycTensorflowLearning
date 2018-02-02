@@ -118,7 +118,8 @@ http://www.jianshu.com/p/36fb9eed82a3
   解决方案：
     sudo rm /var/lib/apt/lists/lock
   
-11）
+11）修改源列表
+  sudo gedit /etc/apt/source.list
 
 
 
