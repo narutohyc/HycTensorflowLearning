@@ -121,6 +121,12 @@ http://www.jianshu.com/p/36fb9eed82a3
 11）修改源列表
   sudo gedit /etc/apt/source.list
 
+12）移除过时或错误源
+  Err:27 http://ppa.launchpad.net/fcitx-team/nightly/ubuntu xenial Release       
+    404  Not Found
+  Reading package lists... Done
+  E: The repository 'http://ppa.launchpad.net/fcitx-team/nightly/ubuntu xenial Release' does not have a Release file.
+  hyc@hyc:/var/lib/apt/lists$  sudo add-apt-repository --remove ppa:fcitx-team/nightly
 
 
 
