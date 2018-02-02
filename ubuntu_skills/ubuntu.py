@@ -104,8 +104,25 @@ http://www.jianshu.com/p/36fb9eed82a3
 9）硬盘复制
   硬盘数据克隆——“再生龙”
   http://www.jianshu.com/p/2db596571db3
+    
+10）使用sudo apt-get update命令时出现如下错误：
+    E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
+    Unable to lock directory /var/lib/apt/lists
+    
+  错误：
+    hyc@hyc:~$ sudo apt update
+    [sudo] password for hyc:    
+    Reading package lists... Done
+    E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
+    E: Unable to lock directory /var/lib/apt/lists/
+  解决方案：
+    sudo rm /var/lib/apt/lists/lock
   
-  
+11）
+
+
+
+
   
   
   
