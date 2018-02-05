@@ -98,6 +98,7 @@ To use it, you just need to call its name in regression layer.
 
 
 7）反卷积和上采样比较
+    http://www.52ml.net/20554.html
     def test():
         path = os.path.join(os.getcwd(), 'data/nyu_datasets/00000.jpg')
         from skimage import io
