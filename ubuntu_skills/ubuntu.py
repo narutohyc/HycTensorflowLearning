@@ -134,6 +134,8 @@ http://www.jianshu.com/p/36fb9eed82a3
 14）ubuntu failed to load kernel modules
   kernel version is too higher, please dowmgrade it.
   
+15）ubuntu查看cpu、內存信息
+  主界面搜索：  System Monitor
   
   
 
