@@ -128,9 +128,11 @@ http://www.jianshu.com/p/36fb9eed82a3
   E: The repository 'http://ppa.launchpad.net/fcitx-team/nightly/ubuntu xenial Release' does not have a Release file.
   hyc@hyc:/var/lib/apt/lists$  sudo add-apt-repository --remove ppa:fcitx-team/nightly
 
-
-
+13）ubuntu無法進入桌面，循環登錄
+  原因：顯卡驅動沒裝好，卸載顯卡驅動
   
+14）ubuntu failed to load kernel modules
+  kernel version is too higher, please dowmgrade it.
   
   
   
