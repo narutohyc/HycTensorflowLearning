@@ -137,6 +137,14 @@ http://www.jianshu.com/p/36fb9eed82a3
 15）ubuntu查看cpu、內存信息
   主界面搜索：  System Monitor
   
+16）ubuntu切換jdk版本
+  sudo add-apt-repository ppa:openjdk-r/ppa  
+  sudo apt-get update   
+  sudo apt-get install openjdk-7-jdk 
+  sudo update-alternatives --config java
+  sudo update-alternatives --config javac
+  
+  
   
 
 
