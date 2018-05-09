@@ -8,3 +8,7 @@
   import sys
   sys.path.append("..")
   from utils import loadDate
+3. List亂序
+  import random   
+  list = range(10)  
+  random.shuffle(list) # 对list洗牌，在原list上做改变
