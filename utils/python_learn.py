@@ -4,4 +4,7 @@
   >>> pairs
   [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
   
-2.
+2. import上層文件，需要添加上層路徑
+  import sys
+  sys.path.append("..")
+  from utils import loadDate
