@@ -143,7 +143,9 @@ http://www.jianshu.com/p/36fb9eed82a3
   sudo apt-get install openjdk-7-jdk 
   sudo update-alternatives --config java
   sudo update-alternatives --config javac
-  
+ 
+17）ubuntu pip 提示 AttributeError: 'module' object has no attribute 'SSL_ST_INIT'
+  sudo python -m easy_install --upgrade pyOpenSSL
   
   
 
