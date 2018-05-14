@@ -42,6 +42,23 @@
     d = math.acos(temp) * R
     return d
 
-7.
+7. 分割字符串并转换类型
+  line = '12,26,31,17,90,28,88,40,77'
+  npyArray = np.fromstring(line, dtype=int, sep=',')
+  >>> [12, 26, 31, 17, 90, 28, 88, 40, 77]
   
-  
+8. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
