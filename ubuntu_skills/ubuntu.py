@@ -147,7 +147,14 @@ http://www.jianshu.com/p/36fb9eed82a3
 17）ubuntu pip 提示 AttributeError: 'module' object has no attribute 'SSL_ST_INIT'
   sudo python -m easy_install --upgrade pyOpenSSL
   
+18）ubuntu下matlab 出现问题:matlab has encountered an internal problem and needs to close
+  相信有不少人在Ubuntu系统下会遇到这个问题, 原因是较新的Ubuntu系统(15.04或者更高)使用的libstdc++.so.6比Matlab默认采用的库版本高, 
+  当Matlab加载这个库的时候,操作系统检测到不兼容的调用于是产生崩溃并给予退出提示框,差不多是这个样子的输出:
   
+  解决方法:强制Matlab使用操作系统提供的库即可, 进入Matlab的安装目录,继续导航到该目录下的sys/os/glnxa64目录, 然后重命名该目录下的
+  文件libstdc++.so.6为libstdc++.so.6.old, 问题解决. 此问题会出现在15.04或更高版本的Ubuntu系统上, 比如我就是从14.10升级到15.04后
+  就出现这个问题.
+19）
 
 
 
