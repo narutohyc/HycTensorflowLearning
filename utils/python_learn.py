@@ -63,7 +63,15 @@
   print(callable(fn))
   >>>Ture
 
+10. assert用法
+  assert boolean_formula,message
+  
+11. 三目運算符 
+  'Yes' if True else 'No'
 
+  
+12. 
+  
 
 
 
