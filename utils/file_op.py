@@ -27,5 +27,18 @@
   os.path.join(’savepath‘, ‘/png/demo’)  #错误
   
 
-6. 
+6. 判断是否有中文
+  def is_chinese(uchar):
+    if u'\u4e00' <= uchar <= u'\u9fff':
+        return True
+    else:
+        return False
+      
+7. 查看剩余空间大小 ubuntu下有效
+  def checkDis(path):
+    import os
+    hd = {}
+    disk = os.statvfs(path)
+    percent = (disk.f_blocks - disk.f_bfree) * 100 / (disk.f_blocks - disk.f_bfree + disk.f_bavail) + 1
+    return 100 - percent
   
