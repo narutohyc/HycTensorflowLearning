@@ -1297,3 +1297,47 @@ Python
 
 
 ](//www.zhihu.com/topic/19559424)
+
+
+### 2\. Pretty Display of Varibles[¶](#2.-Pretty-Display-of-Varibles)
+
+这部分内容可能很多人都知道。如果对带有一个变量或是未赋值语句的cell执行操作，Jupyter 将会自动打印该变量而无需一个输出语句。这非常有用，尤其是使用 Pandas DataFrames 进行处理时，因为输出将会被整齐地格式化为一个表格。
+
+接下来的内容可能没那么人知道：你可以选择修改 `ast_note_iteractively` kernal 选项来使得 Jupyter 为每一行的变量或语句执行这个操作，以便你可以立即看到多条语句一起输出。
+
+In \[17\]:
+
+line1 = "this is from line 1"
+line2 = "this is from line 2"
+
+line1
+line2
+
+Out\[17\]:
+
+'this is from line 2'
+
+In \[18\]:
+
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast\_node\_interactivity = "all"
+
+In \[19\]:
+
+line1
+line2
+
+Out\[19\]:
+
+'this is from line 1'
+
+Out\[19\]:
+
+'this is from line 2'
+
+如果你想要所有的Jupyter实例（Notebook和Console）都设置该选项，只需创建 `~/.ipython/profile_default/ipython_config.py` 文件并写入一下内容：
+
+c = get_config()
+\# Run all nodes interactively
+c.InteractiveShell.ast\_node\_interactivity = "all"
+
