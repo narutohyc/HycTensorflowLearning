@@ -338,21 +338,11 @@ Markdown用于编辑文本，给出常用的Markdown用法：
 
   
 
-最后，推荐一门Python课程：[Python爬虫入门+进阶](http://link.zhihu.com/?target=https%3A//h5.youzan.com/v2/feature/tUXXD5snjc)，适合小白和想要学习更高阶爬虫技术的你~
+## 显示数学公式
+```python
+from IPython.display import display,Math,Latex
+display(Math(r'c = \sqrt{a^2 + b^2}'))
+```
+$$c = \sqrt{a^2 + b^2}$$
 
-——————————
 
-关注公众号（datacastle2016），获取更多数据分析干货。
-
-编辑于 2018-08-08
-
-[
-Python
-](//www.zhihu.com/topic/19552832)
-[
-程序员
-](//www.zhihu.com/topic/19552330)
-
-[
-jupyter
-](//www.zhihu.com/topic/20089941)
