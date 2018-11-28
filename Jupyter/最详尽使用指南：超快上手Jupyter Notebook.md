@@ -343,6 +343,6 @@ Markdown用于编辑文本，给出常用的Markdown用法：
 from IPython.display import display,Math,Latex
 display(Math(r'c = \sqrt{a^2 + b^2}'))
 ```
-$$c = \sqrt{a^2 + b^2}$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$c&space;=&space;\sqrt{a^2&space;&plus;&space;b^2}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$c&space;=&space;\sqrt{a^2&space;&plus;&space;b^2}$$" title="$$c = \sqrt{a^2 + b^2}$$" /></a>
 
 
