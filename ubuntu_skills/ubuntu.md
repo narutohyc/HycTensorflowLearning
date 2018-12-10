@@ -180,11 +180,10 @@
 
     方法：
     1. 点击开始->运行，在对话框中输入"services、msc"，确定，打开windows服务管理器。
+    
     2. 在服务列表中选中"VMware USB Arbitration Service"，双击打开属性对话框，再选择"启动"，就能启动VMware USB Arbitration Service服务了。
-    3. 关闭VMware软件，并重新打开，启动一个虚拟机，进入系统之后VMware就会提示发现USB设备。如果要在虚拟机中使用这些USB设备（以USB摄像头为例），
-    在VMware的菜单栏中选择VM->Removable Devices->Pixart Imaging CIF Single Chip->Connect (Disconnect form host) ，就可以了。
-    当然，这样USB设备在连接到虚拟机的同时会断开同主机（一般为Windows系统）的连接。如果想重新在主机上使用USB设备，
-    则在VMware菜单栏中选择VM->Removable Devices->Pixart Imaging CIF Single Chip->Disconnect (Connect to host) 。
+    
+    3. 关闭VMware软件，并重新打开，启动一个虚拟机，进入系统之后VMware就会提示发现USB设备。如果要在虚拟机中使用这些USB设备（以USB摄像头为例），在VMware的菜单栏中选择VM->Removable Devices->Pixart Imaging CIF Single Chip->Connect (Disconnect form host) ，就可以了。当然，这样USB设备在连接到虚拟机的同时会断开同主机（一般为Windows系统）的连接。如果想重新在主机上使用USB设备，则在VMware菜单栏中选择VM->Removable Devices->Pixart Imaging CIF Single Chip->Disconnect (Connect to host) 。
 
 
 
