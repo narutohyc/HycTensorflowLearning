@@ -177,6 +177,7 @@
     就出现这个问题.
 
 **19. Ubuntu下VM添加網絡攝像頭**
+
     方法：
     1. 点击开始->运行，在对话框中输入"services、msc"，确定，打开windows服务管理器。
     2. 在服务列表中选中"VMware USB Arbitration Service"，双击打开属性对话框，再选择"启动"，就能启动VMware USB Arbitration Service服务了。
