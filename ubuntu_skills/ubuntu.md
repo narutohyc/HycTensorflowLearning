@@ -1,10 +1,12 @@
-1)查看本機安裝軟件（管道過濾）：
-ubuntu@ubuntu:~$ dpkg --list | grep xrd
-ii  xrdp             0.6.1-2           amd64        Remote Desktop Protocol (RDP) server
-卸載安裝軟件：
-sudo apt-get --purge remove xrdp
+## 基础笔记 
 
-2)ubuntu好看主題安裝及使用：
+1. 查看本機安裝軟件（管道過濾）：
+  ubuntu@ubuntu:~$ dpkg --list | grep xrd
+  ii  xrdp             0.6.1-2           amd64        Remote Desktop Protocol (RDP) server
+  卸載安裝軟件：
+  sudo apt-get --purge remove xrdp
+
+2. ubuntu好看主題安裝及使用：
 安裝：
 sudo apt-get install unity-tweak-tool
 打開：
