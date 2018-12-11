@@ -190,15 +190,15 @@
 
 **20. GIthub访问速度慢的解决方法**
 
-    * 查阅对应的IP地址 https://www.ipaddress.com/
+    1. 查阅对应的IP地址 https://www.ipaddress.com/
 
-    * 在hosts文件后新增如下（C:\Windows\System32\drivers\etc\hosts）
+    2. 在hosts文件后新增如下（C:\Windows\System32\drivers\etc\hosts）
 
         192.30.253.113 github.com
     
-    * 修改完hosts需要刷新DNS缓存
+    3. 修改完hosts需要刷新DNS缓存
 
-    1. Linux输入指令：sudo /etc/init.d/networking restart 即可。
+        1. Linux输入指令：sudo /etc/init.d/networking restart 即可。
 
-    2. windows下打开CMD，输入ipconfig /flushdns
+        2. windows下打开CMD，输入ipconfig /flushdns
 
