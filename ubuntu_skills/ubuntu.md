@@ -188,5 +188,13 @@
     当然，这样USB设备在连接到虚拟机的同时会断开同主机（一般为Windows系统）的连接。
     想重新在主机上使用USB设备，则在VMware菜单栏中选择VM->Removable Devices->Pixart Imaging CIF Single Chip->Disconnect (Connect to host) 。
 
+**20. GIthub访问速度慢的解决方法**
 
+    输入网址则可查阅到对应的IP地址
+
+    ipaddress地址：https://www.ipaddress.com/
+
+    新增 C:\Windows\System32\drivers\etc\hosts
+
+    192.30.253.113 github.com
 
