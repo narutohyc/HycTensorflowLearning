@@ -202,3 +202,10 @@
 
         2. windows下打开CMD，输入ipconfig /flushdns
 
+**21. Ubuntu下安装chrome浏览器**
+
+    Ubuntu有专门的开源版，叫Chromium Browser。
+    
+    用Terminal apt-get就行了。
+    1. 第一步：打开Terminal（终端）；
+    2. 第二步：输入sudo apt-get install chromium-browser
