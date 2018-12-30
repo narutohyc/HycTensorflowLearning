@@ -208,4 +208,4 @@
     
     用Terminal apt-get就行了。
     1. 第一步：打开Terminal（终端）；
-    2. 第二步：输入sudo apt-get install chromium-browser
+    2. 第二步：输入sudo apt install chromium-browser
